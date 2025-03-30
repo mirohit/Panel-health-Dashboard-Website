@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" condevice-width, initial-scale=1.0>
+    <link rel="stylesheet" href="index.css">
+    <title>Panel Health Management Dashboards</title>
+    <style>
+        body { font-family: 'Calibri', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #3a506b; color: #fff; padding: 0.3em 0; text-align: center; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo-container { display: flex; align-items: center; margin-left: 20px;}
+        .logo { height: 60px; margin-right: 2em; }
+        nav {margin-left: auto; /* Pushes the navigation to the right */}
+        nav a { color: #fff; margin: 0 1.5em; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { background: linear-gradient(rgba(58,80,107,0.7), rgba(58,80,107,0.7)), url('hero-image.jpg') center/cover; color: #fff; text-align: center; padding: 7em 0; margin-top: 10px; }
+        .typing { font-size: 1.2em; white-space: pre-wrap; border-right: .1em solid orange; margin-top: 1em; font-weight: normal; }
+        .content { padding: 4em; margin-top: 10px; scroll-margin-top: 70px; }
+        .card { background-color: #faf4a0; margin: 1em 0; padding: 1.5em; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+        form { display: flex; flex-direction: column; gap: 0.5em; max-width: 400px; margin: auto; }
+        input, textarea { padding: 0.5em; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #3a506b; color: #fff; padding: 0.5em; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #2c3e50; }
+        .contact-card { background-color: #f4e1b1; padding: 1em; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .contact-card p { margin: 0.2em 0; }
+        .contact-card a { color: blue; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="C:\Users\Rohit.Chavan\OneDrive - Broadcast Audience Research Council\Desktop\Web Devlopment\office logo\mdl-logo.jpg" alt="Company Logo" class="logo">
+    
+        <h1>Panel Health Management Dashboards</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Our Department</h2>
+        <h3 class="typing" id="typing"></h3>
+    </section>
+
+    <script>
+        const text = `MDPL is a meter management company that handles panel operations for India's TV audience measurement system.\nIt deploys and maintains the meters that form the 'TV panel' as per BARC India guidelines.\n\nMDPL manages the largest TV panel in the world (50,000 homes) independently,\nwith BARC India holding 51% share and TAM Media Research holding 49%.\n\nThe company operates with clear roles between MDPL, the meter management agency, and BARC India, the data processing body.`;
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typing").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 10);
+            }
+        }
+        typeEffect();
+    </script>
+
+<section id="Services">
+    <h2>Services</h2>
+    <div class="Services-container">
+        <div class="Services">
+            <h4>CP Dashboard</h4>
+            <p>
+                • Interactive dashboard prepared for Currency Panel which gives trending for the last 2 years.<br><br>
+                • major KPI's such as connectivity, viwership, 7&7 can be analysed as per buisness requiremnet with past performance.<br>
+            </p>
+            <a href="https://barcindia-my.sharepoint.com/:x:/g/personal/rohit_chavan_mdlindia_co_in/EUqhzC2CJlRNjfroS_uCvFcBEfq9q_-pswVOQmWLUIa9jQ?e=TdbDE2" target="_blank">View Dashboard</a>
+        </div>
+        <div class="Services">
+            <h4>OOH Dashboard</h4>
+            <p>
+                • Interactive dashboard prepared for OOH which gives trending for the last 2 years.<br><br>
+                • major KPI's such as connectivity, viwership, 7&7 can be analysed as per buisness requiremnet with past performance.<br>
+            </p>
+            <a href="https://barcindia-my.sharepoint.com/:x:/g/personal/rohit_chavan_mdlindia_co_in/EZ04Fw7wobNBrNhjgqJlrAIBrbttSPd8JOMnUnUjLSu7fA?e=Ux8x5l" target="_blank">View Dashboard</a>
+        </div>
+        <div class="Services">
+            <h4>NC 7+ Dashboard CP</h4>
+            <p>
+                • Interactive dashboard prepared for NC 7+ which gives trending for the last 2 years Daywise of not connected Households more than 7 days.
+            </p>
+            
+            <a href="https://barcindia-my.sharepoint.com/:x:/g/personal/rohit_chavan_mdlindia_co_in/EXfQlMJ1_ihOr2pCVNFXDvUBh9uAHwP_qVpiDC90DgzfFg?e=mzoY8v" target="_blank">View Dashboard</a>
+        </div>
+        <div class="Services">
+            <h4>NC 7+ Dashboard OOH</h4>
+            <p>
+                • Our venture revolves around demystifying the Play Store data to enable app developers within the Android domain.<br><br>
+                • The main objective is to sift through app details and user reviews, refining insights that can guide developers towards making smarter decisions for better user engagement.
+            </p>
+            
+            <a href="https://barcindia-my.sharepoint.com/:x:/g/personal/rohit_chavan_mdlindia_co_in/EZpSfe1BXLpNqd61Aa2tEk8BMTObdEbbWSC7ubAKb4LrEg?e=jruqav" target="_blank">View Dashboard</a>
+        </div>
+        <div class="Services">
+            <h4> RM Productivity dashboard </h4>
+            <p>
+                • Our venture revolves around demystifying the Play Store data to enable app developers within the Android domain.<br><br>
+                • The main objective is to sift through app details and user reviews, refining insights that can guide developers towards making smarter decisions for better user engagement.
+            </p>
+            
+            <a href="https://barcindia-my.sharepoint.com/:x:/g/personal/rohit_chavan_mdlindia_co_in/EUf0dGu6GflHvuiWiw2LNHkBGvBYoGWPA857zVHrRqh85Q?e=bib2Y9" target="_blank">View Dashboard</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="contact">
+        <h2>: Contact :</h2>
+        <div class="contact-info">
+            <p><strong>Amit Parle:</strong> +91 8108152426 <span class="space">   </span> <strong>Email:</strong> <a href="mailto:amit.parle@mdlindia.co.in">amit.parle@mdlindia.co.in</a></p>
+            <p><strong>Naresh Kunwar:</strong> +91 9819188451 <span class="space">   </span> <strong>Email:</strong> <a href="mailto:naresh.kunwar@mdlindia.co.in">naresh.kunwar@mdlindia.co.in</a></p>
+            <p><strong>Rohit Chavan:</strong> +91 8591253758 <span class="space">   </span> <strong>Email:</strong> <a href="mailto:rohit.chavan@mdlindia.co.in">rohit.chavan@mdlindia.co.in</a></p>
+ 
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 Panel Health Department(MDPL). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
