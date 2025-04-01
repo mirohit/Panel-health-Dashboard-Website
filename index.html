@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-    <meta name="viewport" condevice-width, initial-scale=1.0>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Panel Health Management Dashboards</title>
     <style>
@@ -45,6 +45,13 @@
         <h2>Welcome to Our Department</h2>
         <h3 class="typing" id="typing"></h3>
     </section>
+
+    <script>
+        // Check if the user is logged in, if not, redirect to the login page
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
 
     <script>
         const text = `MDPL is a meter management company that handles panel operations for India's TV audience measurement system.\nIt deploys and maintains the meters that form the 'TV panel' as per BARC India guidelines.\n\nMDPL manages the largest TV panel in the world (50,000 homes) independently,\nwith BARC India holding 51% share and TAM Media Research holding 49%.\n\nThe company operates with clear roles between MDPL, the meter management agency, and BARC India, the data processing body.`;
